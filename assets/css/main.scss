@@ -3,12 +3,12 @@
 ---
 
 @import
-    "include/mixins",
-    "vendor/susy/susy",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
 
     "layout/reset",
     "layout/base",
@@ -29,13 +29,13 @@
     "layout/sidebar",
     "layout/json_cv";
 
-/* Custom Sleek Font Styles */
+/* Sleek System Font Override */
 html, body, p, li, h1, h2, h3, h4, .page, .sidebar {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  font-weight: 350 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 400 !important;
   letter-spacing: -0.015em !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 h1, h2, h3, .page__title {
