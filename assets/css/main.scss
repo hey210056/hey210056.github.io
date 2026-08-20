@@ -7,10 +7,7 @@
  * Note that the files are processed in the order they are imported, so they are partly
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
-
 @import
-    "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
@@ -37,3 +34,22 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+html, body, p, li, h1, h2, h3, h4, .page, .sidebar {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 350 !important;
+  letter-spacing: -0.015em !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .page__title {
+  font-weight: 600 !important;
+  letter-spacing: -0.025em !important;
+}
+
+strong, b {
+  font-weight: 600 !important;
+}
