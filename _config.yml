@@ -23,7 +23,7 @@ repository               : "hey210056/hey210056.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/bio-photo-2.jpg"
   name             : "Lee SiHyun"
   pronouns         : "she/her"  
   bio              : "Undergraduate Student in Department of Artifical Intelligence"
